@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
+    <header>
+        <nav id="navbar">
+            <div class="logo">JOLLY GIFT BURABYO</div>
+            <button class="menu-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <section class="hero">
+        <h1>Hi, I'm <span>JOLLY</span></h1>
+        <p>Web Developer | Designer | Programmer</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </section>
 
-    <h1>Jolly Gift Burabyo</h1>
-    <h2>self development as a software developer</h2>
+    <section id="about">
+      
+        <h2>About Me</h2>
+        <div class="about-text"></div>
+        <img src="/IMG_3824~2.jpg" alt="JOLLY" class="about-image">
+        <p>Iam a persionate software developer who started this journey not a long ago but who is really eagered to make a change.</p>
+        <p>I don't know very much yet but i can see my self so far from where iam in a few years because of two things; believing in God and in myself that i can reach there.</p>
+        <p>In high school i took a Math-physics-geography class and now am persuing a degree in software development at African Leadership University.</p>
+       
+      </div>
+    </section>
 
-    <section>
-      <h2>Projects</h2>
-      <p>Here are some of the projects i want to work on the future.</p>
-     <ul>
-      <li>
-        <img src="/personal assistance.jpg" alt="Jolly Gift">
-        AI-Powered Personal Assistant: Build an AI-based personal assistant that can handle tasks like scheduling, reminders, and natural language processing (NLP) for various commands. </li>
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>some of the skills i have acquared so far.</h3>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Responsive Design</div>
+        </div>
+    </section>
 
-<li>
-  <img src="/blockchain.jpg" alt="Jolly Gift">
-  Blockchain-Based Voting System: Create a secure and transparent voting system using blockchain technology, allowing users to vote safely with complete anonymity.</li>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="/weather.jpg" alt="Project 1">
+                <h3>Weather App</h3>
+                <p> Fetch real-time weather data from an API like OpenWeather.</p>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="project-card">
+                <img src="/typing test.png" alt="Project 2">
+                <h3>Typing Speed Test</h3>
+                <p> Measures how fast users can type a given text.</p>
+                <button class="view-details">View Details</button>
+            </div>
+        </div>
+    </section>
 
-<li>
-  <img src="/augmented reality.jpg" alt="Jolly Gift">
-  Augmented Reality (AR) App: Develop an AR app for various use cases, such as interior design, gaming, or educational tools, allowing users to visualize objects in the real world through their devices.</li>
-
-     
-     </ul>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="last-btn">Send Message</button>
+        </form>
+        <p id="form-message"></p>
     </section>
 
     <footer>
-      <p>&copy; 2025 My Portfolio</p>
+        <p>&copy; 2025 Your JOLLY | All Rights Reserved</p>
     </footer>
-  </header>
 </body>
 </html>
