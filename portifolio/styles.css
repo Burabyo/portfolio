@@ -114,3 +114,55 @@ nav {
   border-radius: 20px;
   background-color:paleturquoise;
 }
+
+.logo{
+  border-radius: 50%;
+  padding:0.5px;
+
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.education-card {
+  background: #222;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 80%;
+  text-align: left;
+  position: relative;
+}
+
+.year {
+  background: #00adb5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.experience-card {
+  background: #222;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 80%;
+  text-align: left;
+  position: relative;
+}
+
+.year {
+  background: #00adb5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}

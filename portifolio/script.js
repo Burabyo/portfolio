@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
           formMessage.textContent = "Please fill in all fields.";
       } else {
           formMessage.style.color = "green";
-          formMessage.textContent = "Message sent successfully!";
+          formMessage.textContent = "Thank you for the support!";
           this.reset();
       }
   });
@@ -30,3 +30,23 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+document.querySelectorAll(".education-card").forEach(card => {
+  card.addEventListener("mouseover", () => {
+      card.style.transform = "scale(1.05)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+      card.style.transform = "scale(1)";
+  });
+});
+document.querySelectorAll(".experience-card").forEach(card => {
+  card.addEventListener("mouseover", () => {
+      card.style.transform = "scale(1.05)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+      card.style.transform = "scale(1)";
+  });
+});
+
+

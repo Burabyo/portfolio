@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <div class="logo">JOLLY GIFT BURABYO</div>
+            <div class="logo">
+              <img src="/logo.png" alt="JOLLY" width="80px" height="50px">
+            </div>
             <button class="menu-toggle">&#9776;</button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#Education">Education</a>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#Experiences">Experiences</a>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -39,9 +43,25 @@
       </div>
     </section>
 
+    <section id="education">
+      <h2>Education</h2>
+      <div class="timeline">
+          <div class="education-card">
+              <span class="year">2024 - Present</span>
+              <h3>Bachelor's in Software Development</h3>
+              <p>African Leadership University.</p>
+          </div>
+          <div class="education-card">
+              <span class="year">2020 - 2023</span>
+              <h3>High School Diploma</h3>
+              <p>Lycee Notre Dame De Citaux High School - Majored in Mathematics-physics-Geography.</p>
+          </div>
+      </div>
+  </section>
+  
+
     <section id="skills">
         <h2>Skills</h2>
-        <h3>some of the skills i have acquared so far.</h3>
         <div class="skills-container">
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
@@ -50,6 +70,22 @@
             <div class="skill">Responsive Design</div>
         </div>
     </section>
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        <div class="experience-card">
+          <span class="year">2024-2025</span>
+          <h3>Freelance Web Developer</h3>
+          <p>Developed personal projects and websites for small businesses, focusing on HTML, CSS, and JavaScript.</p>
+      </div>
+          <div class="experience-card">
+              <span class="year">2023</span>
+              <h3>Call center Agent</h3>
+              <p><strong>CCI Company</strong> - Worked on proving customer services to USA citizens via call lines.</p>
+          </div>
+      </div>
+  </section>
+  
 
     <section id="projects">
         <h2>Projects</h2>
