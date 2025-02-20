@@ -48,5 +48,31 @@ document.querySelectorAll(".experience-card").forEach(card => {
       card.style.transform = "scale(1)";
   });
 });
+const slides = document.querySelector('.slides');
+const images = document.querySelectorAll('.slides img');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+let index = 0;
+
+function showSlide(n) {
+    if (n >= images.length) index = 0;
+    if (n < 0) index = images.length - 1;
+    slides.style.transform = `translateX(${-index * 100}%)`;
+}
+
+next.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default anchor tag behavior
+    index++;
+    showSlide(index);
+});
+
+prev.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default anchor tag behavior
+    index--;
+    showSlide(index);
+});
+
+showSlide(index);
 
 
