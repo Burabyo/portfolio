@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on different devices -->
+    <title>Portfolio</title> <!-- Sets the title of the webpage -->
+
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+
+    <!-- Link to external JavaScript file for interactivity -->
+    <script defer src="script.js"></script> <!-- Uses 'defer' to load JavaScript after the HTML -->
 </head>
 <body>
+
+    <!-- Header section containing the navigation bar -->
     <header>
-        <nav id="navbar">
-            <div class="logo">
-              <img src="/logo.png" alt="JOLLY" width="80px" height="50px">
+        <nav id="navbar"> <!-- Navigation bar with ID for styling and JavaScript -->
+            <div class="logo"> <!-- Container for the logo -->
+                <img src="/logo.png" alt="JOLLY" width="80px" height="50px"> <!-- Logo image -->
             </div>
-            <button class="menu-toggle">&#9776;</button>
-            <ul class="nav-links">
+            <button class="menu-toggle">&#9776;</button> <!-- Button for mobile navigation menu -->
+            <ul class="nav-links"> <!-- Unordered list for navigation links -->
                 <li><a href="#about">About</a></li>
                 <li><a href="#Education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -25,112 +31,118 @@
         </nav>
     </header>
 
+    <!-- Hero section: Introduction and call-to-action -->
     <section class="hero">
-        <h1>Hi, I'm <span>JOLLY</span></h1>
-        <p>Web Developer | Designer | Programmer</p>
-        <a href="#contact" class="btn">Hire Me</a>
+        <h1>Hi, I'm <span>JOLLY</span></h1> <!-- Main heading introducing yourself -->
+        <p>Web Developer | Designer | Programmer</p> <!-- Short description of your skills -->
+        <a href="#contact" class="btn">Hire Me</a> <!-- Call-to-action button linking to contact section -->
     </section>
 
+    <!-- About Me section -->
     <section id="about">
-      
-        <h2>About Me</h2>
-        <div class="about-text"></div>
-        <img src="/IMG_3824~2.jpg" alt="JOLLY" class="about-image">
-        <p>Iam a persionate software developer who started this journey not a long ago but who is really eagered to make a change.</p>
-        <p>I don't know very much yet but i can see my self so far from where iam in a few years because of two things; believing in God and in myself that i can reach there.</p>
-       
-      </div>
+        <h2>About Me</h2> <!-- Section heading -->
+        <div class="about-text"></div> <!-- Placeholder for additional about text -->
+        <img src="/IMG_3824~2.jpg" alt="JOLLY" class="about-image"> <!-- Profile picture -->
+        <p>I am a passionate software developer who started this journey not long ago but who is really eager to make a change.</p> <!-- Personal description -->
+        <p>I don't know very much yet but I can see myself far from where I am in a few years because of two things; believing in God and in myself that I can reach there.</p> <!-- Motivational statement -->
     </section>
 
+    <!-- Education section -->
     <section id="education">
-      <h2>Education</h2>
-      <div class="timeline">
-          <div class="education-card">
-              <span class="year">2024 - Present</span>
-              <h3>Bachelor's in Software Development</h3>
-              <p>African Leadership University.</p>
-          </div>
-          <div class="education-card">
-              <span class="year">2020 - 2023</span>
-              <h3>High School Diploma</h3>
-              <p>Lycee Notre Dame De Citaux High School - Majored in Mathematics-physics-Geography.</p>
-          </div>
-      </div>
-  </section>
-  
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Git & GitHub</div>
-            <div class="skill">Responsive Design</div>
-      
-    </section>
-          
-    <div class="slider">
-        <h2>Some of the webpages I have built</h2>
-        <div class="slides">
-            <img src="/Screenshot 2025-02-20 134330.png" alt="Image 1">
-            <img src="/Screenshot 2025-02-20 134448.png" alt="Image 2">
-            <img src="/Screenshot 2025-02-20 134627.png" alt="Image 3">
+        <h2>Education</h2> <!-- Section heading -->
+        <div class="timeline"> <!-- Container for education history -->
+            <div class="education-card">
+                <span class="year">2024 - Present</span> <!-- Education duration -->
+                <h3>Bachelor's in Software Development</h3> <!-- Degree title -->
+                <p>African Leadership University.</p> <!-- Institution name -->
+            </div>
+            <div class="education-card">
+                <span class="year">2020 - 2023</span> <!-- Education duration -->
+                <h3>High School Diploma</h3> <!-- Degree title -->
+                <p>Lycee Notre Dame De Citaux High School - Majored in Mathematics-Physics-Geography.</p> <!-- Institution and major -->
+            </div>
         </div>
-        <div class="navigation">
-            <a href="#" class="prev">❮</a>
-            <a href="#" class="next">❯</a>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+        <h2>Skills</h2> <!-- Section heading -->
+        <div class="skills-container"> <!-- Container for skills -->
+            <div class="skill">HTML</div> <!-- Skill item -->
+            <div class="skill">CSS</div> <!-- Skill item -->
+            <div class="skill">JavaScript</div> <!-- Skill item -->
+            <div class="skill">Git & GitHub</div> <!-- Skill item -->
+            <div class="skill">Responsive Design</div> <!-- Skill item -->
+        </div>
+    </section>
+
+    <!-- Image slider section -->
+    <div class="slider">
+        <h2>Some of the webpages I have built</h2> <!-- Section heading -->
+        <div class="slides"> <!-- Container for images -->
+            <img src="/Screenshot 2025-02-20 134330.png" alt="Image 1"> <!-- Slide 1 -->
+            <img src="/Screenshot 2025-02-20 134448.png" alt="Image 2"> <!-- Slide 2 -->
+            <img src="/Screenshot 2025-02-20 134627.png" alt="Image 3"> <!-- Slide 3 -->
+        </div>
+        <div class="navigation"> <!-- Navigation arrows -->
+            <a href="#" class="prev">❮</a> <!-- Previous slide button -->
+            <a href="#" class="next">❯</a> <!-- Next slide button -->
         </div>
     </div>
-</div>
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <div class="timeline">
-        <div class="experience-card">
-          <span class="year">2024-present</span>
-          <h3>Freelance Web Developer</h3>
-          <p>Developed personal projects and websites for small businesses, focusing on HTML, CSS, and JavaScript.</p>
-      </div>
-          <div class="experience-card">
-              <span class="year">2023</span>
-              <h3>Call center Agent</h3>
-              <p><strong>CCI Company</strong> - Worked on proving customer services to USA citizens via call lines.</p>
-          </div>
-      </div>
-  </section>
-  
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="/weather.jpg" alt="Project 1">
-                <h3>Weather App</h3>
-                <p> Fetch real-time weather data from an API like OpenWeather.</p>
-                <button class="view-details">View Details</button>
+    <!-- Work Experience section -->
+    <section id="experience">
+        <h2>Work Experience</h2> <!-- Section heading -->
+        <div class="timeline"> <!-- Container for work history -->
+            <div class="experience-card">
+                <span class="year">2024-present</span> <!-- Work duration -->
+                <h3>Freelance Web Developer</h3> <!-- Job title -->
+                <p>Developed personal projects and websites for small businesses, focusing on HTML, CSS, and JavaScript.</p> <!-- Job description -->
             </div>
-            <div class="project-card">
-                <img src="/typing test.png" alt="Project 2">
-                <h3>Typing Speed Test</h3>
-                <p> Measures how fast users can type a given text.</p>
-                <button class="view-details">View Details</button>
+            <div class="experience-card">
+                <span class="year">2023</span> <!-- Work duration -->
+                <h3>Call center Agent</h3> <!-- Job title -->
+                <p><strong>CCI Company</strong> - Worked on providing customer services to USA citizens via call lines.</p> <!-- Job description -->
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="last-btn">Send Message</button>
-        </form>
-        <p id="form-message"></p>
+    <!-- Projects section -->
+    <section id="projects">
+        <h2>Projects</h2> <!-- Section heading -->
+        <div class="projects-container"> <!-- Container for projects -->
+            <div class="project-card">
+                <img src="/weather.jpg" alt="Project 1"> <!-- Project image -->
+                <h3>Weather App</h3> <!-- Project title -->
+                <p>Fetch real-time weather data from an API like OpenWeather.</p> <!-- Project description -->
+                <button class="view-details">View Details</button> <!-- Button for project details -->
+            </div>
+            <div class="project-card">
+                <img src="/typing test.png" alt="Project 2"> <!-- Project image -->
+                <h3>Typing Speed Test</h3> <!-- Project title -->
+                <p>Measures how fast users can type a given text.</p> <!-- Project description -->
+                <button class="view-details">View Details</button> <!-- Button for project details -->
+            </div>
+        </div>
     </section>
 
+    <!-- Contact section -->
+    <section id="contact">
+        <h2>Contact Me</h2> <!-- Section heading -->
+        <form id="contact-form"> <!-- Contact form -->
+            <input type="text" id="name" placeholder="Your Name" required> <!-- Name input field -->
+            <input type="email" id="email" placeholder="Your Email" required> <!-- Email input field -->
+            <textarea id="message" placeholder="Your Message" required></textarea> <!-- Message input field -->
+            <button type="submit" class="last-btn">Send Message</button> <!-- Submit button -->
+        </form>
+        <p id="form-message"></p> <!-- Placeholder for form submission response -->
+    </section>
+
+    <!-- Footer section -->
     <footer>
-        <p>&copy; 2025 Your JOLLY | All Rights Reserved</p>
+        <p>&copy; 2025 JOLLY | All Rights Reserved</p> <!-- Copyright text -->
     </footer>
+
 </body>
 </html>
+

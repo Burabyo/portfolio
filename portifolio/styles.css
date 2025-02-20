@@ -1,202 +1,219 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #111;
-  color: #fff;
-  text-align: center;
+  font-family: Arial, sans-serif; /* Sets the default font to Arial with sans-serif fallback */
+  margin: 0; /* Removes default browser margin */
+  padding: 0; /* Removes default browser padding */
+  background-color: #111; /* Sets the background color to dark */
+  color: #fff; /* Sets the text color to white for contrast */
+  text-align: center; /* Centers all text inside the body */
 }
 
 h1, h2, h3 {
-  color: #00adb5;
+  color: #00adb5; /* Sets a consistent accent color for headings */
 }
 
 a {
-  text-decoration: none;
-  color: #00adb5;
+  text-decoration: none; /* Removes underlining from links */
+  color: #00adb5; /* Matches the theme’s accent color for links */
 }
 
+/* Button Styles */
 .btn {
-  background: #00adb5;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+  background: #00adb5; /* Sets the background color to match the theme */
+  color: white; /* Ensures the text is visible against the background */
+  padding: 10px 20px; /* Adds padding for a better click area */
+  border: none; /* Removes default button border */
+  border-radius: 10px; /* Rounds the corners for a softer look */
+  cursor: pointer; /* Changes cursor to indicate the button is clickable */
 }
 
+/* Navigation Bar */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #222;
-  position: fixed;
-  width: 100%;
-  top: 0;
+  display: flex; /* Enables flexbox for layout */
+  justify-content: space-between; /* Spaces elements evenly */
+  align-items: center; /* Aligns items vertically */
+  background: #222; /* Sets a slightly lighter dark background for contrast */
+  position: fixed; /* Fixes the navbar at the top */
+  width: 100%; /* Makes the navbar span the full width */
+  top: 0; /* Positions it at the very top of the page */
 }
 
+/* Navigation Links */
 .nav-links {
-  list-style: none;
-  display: flex;
+  list-style: none; /* Removes default bullet points from list */
+  display: flex; /* Aligns the links in a row */
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 15px; /* Adds spacing between navigation links */
 }
 
+/* Menu Toggle Button for Mobile */
 .menu-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+  display: none; /* Hides the toggle button by default (for larger screens) */
+  font-size: 24px; /* Sets the size of the menu icon */
+  background: none; /* Removes default button background */
+  color: #fff; /* Sets the button color to white */
+  border: none; /* Removes button border */
+  cursor: pointer; /* Changes cursor to indicate clickability */
 }
 
+/* Hero Section */
 .hero {
-  padding: 100px 20px;
-  background: url('images/hero-bg.jpg') center/cover;
+  padding: 100px 20px; /* Adds padding for spacing */
+  background: url('images/hero-bg.jpg') center/cover; /* Sets a full-width background image */
 }
 
+/* Containers for Skills and Projects */
 .skills-container, .projects-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: flex; /* Uses flexbox for alignment */
+  justify-content: center; /* Centers items horizontally */
+  flex-wrap: wrap; /* Allows items to wrap onto new lines */
 }
 
+/* Individual Skill and Project Cards */
 .skill, .project-card {
-  background: #222;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
+  background: #222; /* Dark background to match the theme */
+  padding: 15px; /* Adds spacing inside the card */
+  margin: 10px; /* Adds spacing between cards */
+  border-radius: 5px; /* Slightly rounds corners for a modern look */
 }
 
+/* Project Card Images */
 .project-card img {
-  width: 50%;
-  border-radius: 5px;
+  width: 50%; /* Makes images take up half the card width */
+  border-radius: 5px; /* Rounds image corners */
 }
 
+/* Contact Form Inputs and Textarea */
 #contact-form input, textarea {
-  width: 80%;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  width: 80%; /* Makes input fields take up 80% of the available width */
+  margin: 10px; /* Adds spacing between fields */
+  padding: 10px; /* Adds padding inside the input fields */
+  border-radius: 5px; /* Slightly rounds input field corners */
 }
 
+/* Responsive Design for Mobile Screens */
 @media screen and (max-width: 768px) {
   .nav-links {
-      display: none;
-      flex-direction: column;
+      display: none; /* Hides navigation links by default on smaller screens */
+      flex-direction: column; /* Stacks links vertically when displayed */
   }
   .menu-toggle {
-      display: block;
+      display: block; /* Shows the menu button on smaller screens */
   }
 }
+
+/* About Section Image */
 .about-image {
-  width: 20%;
-  border-radius: 5px;
-  border-radius: 50%;
+  width: 20%; /* Makes the image take up 20% of the available width */
+  border-radius: 5px; /* Slightly rounds corners */
+  border-radius: 50%; /* Makes the image circular */
 }
+
+/* About Section Text */
 .about-text {
-  width: 80%;
-  text-align: left;
-  display: flex;
+  width: 80%; /* Makes the text section take up 80% of the width */
+  text-align: left; /* Aligns text to the left */
+  display: flex; /* Uses flexbox for alignment */
 }
+
+/* Paragraphs inside the About Section */
 .about-text p {
-  margin: 10px;
-  font-family: cursive;
+  margin: 10px; /* Adds spacing between paragraphs */
+  font-family: cursive; /* Sets a cursive font style for a unique look */
 }
+
+/* Buttons for Viewing Details and Last Section */
 .view-details, .last-btn {
-  color:black;
-  font-size: 20px;
-  border-radius: 20px;
-  background-color:paleturquoise;
+  color: black; /* Sets text color to black */
+  font-size: 20px; /* Sets a larger font size */
+  border-radius: 20px; /* Rounds button corners */
+  background-color: paleturquoise; /* Uses a light turquoise color */
 }
 
-.logo{
-  border-radius: 50%;
-  padding:0.5px;
-
+/* Logo Styling */
+.logo {
+  border-radius: 50%; /* Makes the logo circular */
+  padding: 0.5px; /* Adds a tiny padding */
 }
+
+/* Timeline Container */
 .timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+  display: flex; /* Uses flexbox for alignment */
+  flex-direction: column; /* Stacks timeline items vertically */
+  align-items: center; /* Centers items */
+  position: relative; /* Keeps position relative for absolute child elements */
 }
 
+/* Education Card Styling */
 .education-card {
-  background: #222;
-  padding: 15px;
-  border-radius: 5px;
-  margin: 10px;
-  width: 80%;
-  text-align: left;
-  position: relative;
+  background: #222; /* Dark background to match the theme */
+  padding: 15px; /* Adds spacing inside the card */
+  border-radius: 5px; /* Rounds corners */
+  margin: 10px; /* Adds spacing between cards */
+  width: 80%; /* Makes cards take up 80% of the container */
+  text-align: left; /* Aligns text to the left */
+  position: relative; /* Allows absolute positioning of child elements */
 }
 
+/* Year Tag for Education and Experience */
 .year {
-  background: #00adb5;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-.timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+  background: #00adb5; /* Sets a background color to match the theme */
+  padding: 5px 10px; /* Adds spacing inside the year tag */
+  border-radius: 5px; /* Rounds corners */
+  font-weight: bold; /* Makes the text bold */
 }
 
+/* Experience Card Styling */
 .experience-card {
-  background: #222;
-  padding: 15px;
-  border-radius: 5px;
-  margin: 10px;
-  width: 80%;
-  text-align: left;
-  position: relative;
+  background: #222; /* Dark background to match the theme */
+  padding: 15px; /* Adds spacing inside the card */
+  border-radius: 5px; /* Rounds corners */
+  margin: 10px; /* Adds spacing between cards */
+  width: 80%; /* Makes cards take up 80% of the container */
+  text-align: left; /* Aligns text to the left */
+  position: relative; /* Allows absolute positioning of child elements */
 }
 
-.year {
-  background: #00adb5;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-weight: bold;
-}
+/* Image Slider Container */
 .slider {
-  width: 100%;
-  max-width: 600px;
-  position: relative;
-  margin: auto;
-  overflow: hidden;
+  width: 100%; /* Makes the slider take up full width */
+  max-width: 600px; /* Limits maximum width for better appearance */
+  position: relative; /* Allows absolute positioning for navigation */
+  margin: auto; /* Centers the slider */
+  overflow: hidden; /* Hides overflowing content */
 }
 
+/* Slides Container */
 .slides {
-  display: flex;
-  transition: transform 0.7s linear;
+  display: flex; /* Uses flexbox to align slides in a row */
+  transition: transform 0.7s linear; /* Smooth transition when changing slides */
 }
 
+/* Images inside the Slider */
 .slides img {
-  width: 50%;
-  display: block;
+  width: 50%; /* Makes images take up half of the container width */
+  display: block; /* Ensures images are displayed correctly */
 }
 
+/* Navigation Controls for Slider */
 .navigation {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
+  position: absolute; /* Positions navigation over the slider */
+  top: 50%; /* Centers navigation vertically */
+  width: 100%; /* Makes navigation span full width */
+  display: flex; /* Uses flexbox for alignment */
+  justify-content: space-between; /* Spaces navigation buttons apart */
+  transform: translateY(-50%); /* Adjusts position to truly center */
 }
 
+/* Navigation Buttons */
 .navigation a {
-  color: white;
-  font-size: 2rem;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem;
-  border-radius: 50%;
+  color: white; /* Makes buttons white for visibility */
+  font-size: 2rem; /* Sets a larger font size */
+  text-decoration: none; /* Removes underline */
+  background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+  padding: 0.5rem; /* Adds padding */
+  border-radius: 50%; /* Makes buttons circular */
 }
+
